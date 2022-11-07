@@ -1,0 +1,17 @@
+print("Welcome to the tip caculator.")
+
+bill = float(input("how much was the bill?\n"))
+
+tip = float(input("would you like to leave a 10, 12, or 15% tip?\n"))
+
+number_of_people = float(input("how many people will split the bill?\n"))
+
+
+
+percentage_tip = (tip)/100
+
+result = (bill*percentage_tip + bill)/number_of_people
+
+final_bill = round(result , 2)
+
+print(final_bill)
